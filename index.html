@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <style>
+        #language {
+            height: 500px;
+            width: 500px;
+            display: none;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+</head>
+<body>
+    <div id="nav">
+        <button id="winkle" onclick="lang()" class="navButtons">
+            My Language
+        </button>
+    </div>
+
+    <div id="language">
+        <h1>Stinky Winky</h1>
+    </div>
+
+    <script>
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+
+        function lang() {
+            toggler('language');
+        }
+    </script>
+</body>
+</html>
